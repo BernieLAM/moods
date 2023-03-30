@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy / Joy Meter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.5/nv.d3.min.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"
+    ></script>
+
+    <script src="main.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="page-header">
+      <div class="page-title">Joy-o-meter (Firestore)</div>
+    </div>
+
+    <div id="chart" class="chart"><svg></svg></div>
+
+    <div id="controls" class="controls">
+      <button id="happy" class="btn btn-success">Happy</button>
+      <button id="ok" class="btn btn-warning">OK</button>
+      <button id="sad" class="btn btn-primary">Sad</button>
+      <button id="angry" class="btn btn-danger">Angry</button>
+    </div>
+  </body>
+</html>
